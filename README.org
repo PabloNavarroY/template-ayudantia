@@ -1,1 +1,9 @@
 #+title: Template Ayudantía
+
+* Como ocupar esto
+1. Especificar los detalles del ramo en =main.tex=
+2. Copiar el contenido de la carpeta =template= en otra carpeta, por ejemplo =ayudantia01=, u ocupar el script
+   #+begin_src
+./crear-ayudantia 01
+   #+end_src
+3. Compilar =ayudantia01/enunciado.tex=.
