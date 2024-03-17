@@ -75,7 +75,7 @@
 
 \renewcommand{\maketitle} {
   \begin{varwidth}{0.4\textwidth}
-    \includegraphics[width=1.75cm]{images/logo-uc.png}
+    \includegraphics[width=2cm]{images/logo-uc.png}
   \end{varwidth}
   \hspace*{.05cm}
   \begin{varwidth}{0.7\textwidth} \sc
@@ -86,6 +86,7 @@
     Ayudante:~ \ayudantia@author
   \end{varwidth}
   \par
+  \vspace*{1em}
   \begin{center}
     {\large \ayudantia@course} \par
     \vspace*{1ex}
@@ -93,7 +94,7 @@
     \vspace*{1ex}
     {\large \ayudantia@date}
   \end{center}
-  % \vspace*{1em}
+  \vspace*{1em}
 }
 
 % Lists
