@@ -1,0 +1,3 @@
+[submodule "latex-stash"]
+	path = latex-stash
+	url = https://github.com/PabloNavarroY/latex-stash.git

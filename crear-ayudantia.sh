@@ -18,4 +18,4 @@ else
     sed -i 's/NUMM/'"$1"'/' "$folder/solucion.tex"
 fi
 
-cp "template/.latexmkrc" "$folder"
+ln -rs "template/.latexmkrc" "$folder/.latexmkrc"
