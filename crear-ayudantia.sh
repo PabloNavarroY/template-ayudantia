@@ -1,21 +1,23 @@
 #!/usr/bin/env sh
 
 folder="ayudantia$1"
+enun="enunciado$1"
+solu="solucion$1"
 
 mkdir -p "$folder"
 
-if [ -f "$folder/enunciado.tex" ]; then
-    echo "$folder/enunciado.tex ya existe"
+if [ -f "$folder/$enun.tex" ]; then
+    echo "$folder/$enun.tex ya existe"
 else
-    cp "template/enunciado.tex" "$folder"
-    sed -i 's/NUMM/'"$1"'/' "$folder/enunciado.tex"
+    cp -T "template/enunciado.tex" "$folder/$enun.tex"
+    sed -i 's/NUMM/'"$1"'/' "$folder/$enun.tex"
 fi
 
-if [ -f "$folder/solucion.tex" ]; then
-    echo "$folder/solucion.tex ya existe"
+if [ -f "$folder/$solu.tex" ]; then
+    echo "$folder/$solu.tex ya existe"
 else
-    cp "template/solucion.tex" "$folder"
-    sed -i 's/NUMM/'"$1"'/' "$folder/solucion.tex"
+    cp -T "template/solucion.tex" "$folder/$solu.tex"
+    sed -i 's/NUMM/'"$1"'/' "$folder/$solu.tex"
 fi
 
 ln -rs "template/.latexmkrc" "$folder/.latexmkrc"
