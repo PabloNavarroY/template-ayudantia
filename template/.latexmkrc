@@ -1,5 +1,5 @@
 @default_files = ('enunciado.tex', 'solucion.tex');
-ensure_path( 'TEXINPUTS', '..//' );
+ensure_path( 'TEXINPUTS', '../', '../latex-stash//' );
 
 # Outputs
 $pdf_mode = 1;
